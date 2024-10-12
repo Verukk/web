@@ -1,0 +1,133 @@
+body {
+    background-image: url('Source/fon_test.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Georgia", serif;
+    color: #ddd;
+}
+
+h1{
+    border: 4px solid #b8860b;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+    padding: 15px;
+    color: #ffdf00;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    font-family: 'Cinzel', serif;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    border: 2px solid #b8860b;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 15px;
+    color: #ffdf00;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    text-align: left;
+    width: fit-content;
+}
+
+a{
+    color: #ffdf00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+
+}
+
+a:hover{
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6)
+}
+
+main{
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    padding: 1%;
+    word-spacing: 2px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    color: #eee;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #8b4513, #a0522d);
+    padding: 10px 20px;
+    color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin:10px 0;
+    text-align: left;
+    width: fit-content;
+    font-family: 'Cinzel', serif;
+    border: 2px solid #b8860b;
+}
+
+p{
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button{
+    background-color: #8b4513;
+    color: #fff;
+    border: 2px solid #b8860b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+
+li{
+    text-decoration: underline;
+}
+
+.capitalize{
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.uppercase{
+    background-color: #8b4513;
+    color: #fff;
+    border: 2px solid #b8860b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    width: fit-content;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+pre{
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #dddddd;
+    overflow-x: auto;
+}
+
+code{
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #a0522d;
+}
