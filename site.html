@@ -2,39 +2,63 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>История Альтидии</title>
+    <title>Altidia World Wiki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta name="Daniil Dorodeiko" content="Altidia Wiki" />
     <meta
         name = "keywords"
         content="insert, keywords, here" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="Scripts/ScrollScript.js"></script>
+    <script src="Scripts/IIFE_script.js"></script>
+    <script src="Scripts/activelink.js"></script>
+    <style>
+        .flickity-button {
+            background: #333;
+        }
+        .flickity-button:hover {
+            background: #F90;
+        }
+
+        .flickity-prev-next-button {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: #ffdf00;
+            border-color: #ffdf00;
+            transform: scale(1.2);
+            animation: pulse 1s infinite;
+        }
+        .flickity-button-icon {
+            fill: white;
+        }
+
+    </style>
+
 </head>
 <body>
-<header>
-    <h1>История Альтидии</h1>
-    <section>
-        <nav>
-            <h4>Страны Западного Континента</h4>
-            <ul>
-                <li><a href="a">Республика Корек</a></li>
-                <li><a href="a">Королевство Изагия</a></li>
-                <li><a href="a">Шуримская Империя</a></li>
-                <li><a href="a">Корстадия</a></li>
-            </ul>
-            <h4>Страны Восточного Континента</h4>
-            <ul>
-                <li><a href="a">Королевство Дулакия</a></li>
-                <li><a href="a">Дворфийское Королевство</a></li>
-                <li><a href="a">Протекторат Бендито</a></li>
-                <li><a href="a">Поншариат</a></li>
-            </ul>
-        </nav>
-    </section>
-</header>
-<main>
-    <h2>Зачем этот сайт и с чем его едят?</h2>
-    <section>
-        <h3>В ваших руках - <b>потуводитель по миру</b></h3>
+<div class="header">
+    <div class="container">
+        <div class="image-container">
+            <img src = "Source/crusader.png" alt="Arstadia World Logo">
+    </div>
+
+        <h1 class="title">Altidia World Wiki</h1>
+            <div class="buttons">
+        <a href="zapad.html" id = "west">Страны Западного Континента</a>
+        <a href="vostok.html" id = "east">Страны Восточного Континента</a>
+                <a href="constructor.html" id = "table_constructor">Конструктор таблиц инициативы</a>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<main class="navigation">
+
+    <section class="history-section full-width">
+        <h1>История Альтидии</h1>
         <p>
             «<strong>Альтидия</strong>» — это уникальный мир, созданный с любовью к фэнтези и настольным ролевым играм.
             В нашем же случаем, в настольной игре <strong><i>DnD</i></strong>.
@@ -47,7 +71,77 @@
             своими идеями. Ваше приключение начинается здесь!<br>
             <p>
             <i>Кто знает, может быть однажды вы тоже появитесь здесь</i>
-            </p>
+
+        </p>
+        </section>
+
+    <section class ="gallery-section">
+        <div class ="gallery">
+            <img src="Source/Astero.png" alt = test1>
+            <img src="Source/Jax.png" alt = test2>
+            <img src="Source/testsub.png" alt = test3>
+            <div class="description">Герой или злодей? Только ты сам определишь свою судьбу.</div>
+        </div>
+
+    </section>
+
+    <section class="table-section">
+        <h2>Список событий</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Событие</th>
+                    <th>Дата</th>
+                    <th>Описание</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Прибытие Кан`Дратира</td>
+                    <td>700</td>
+                    <td>Год, когда Кан`Дратир впервые пересёк границу Корека, и попал в столицу.
+                        Это знаменательная дата, ибо после неё мир начал оживать,
+                        лидеры начали играть в политические игры, а армии точить своё оружие.
+                        Так же, некий Константин "Прозрел" </td>
+                </tr>
+                <tr>
+                    <td>Видение Оракула</td>
+                    <td>701</td>
+                    <td>блин) Не надо было ему врать</td>
+                </tr>
+                <tr>
+                    <td>Корековско-Шуримская война</td>
+                    <td>702</td>
+                    <td>блин) Не надо было ему врать</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+        <nav>
+            <h4>Страны Западного Континента</h4>
+            <ul>
+                <li><a href="#korek">Республика Корек</a></li>
+                <li><a href="#izagia">Королевство Изагия</a></li>
+                <li><a href="a">Шуримская Империя</a></li>
+                <li><a href="a">Корстадия</a></li>
+            </ul>
+            <h4>Страны Восточного Континента</h4>
+            <ul>
+                <li><a href="a">Королевство Дулакия</a></li>
+                <li><a href="a">Дворфийское Королевство</a></li>
+                <li><a href="a">Протекторат Бендито</a></li>
+                <li><a href="a">Поншариат</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <h2>Зачем этот сайт и с чем его едят?</h2>
+    <section>
+        <h3>В ваших руках - <b>путеводитель по миру</b></h3>
     </section>
     <aside>
         <pre>
@@ -95,6 +189,16 @@
             Оскар: Мне пофиг, <i>удачи!</i><br>
         </q>
     </p>
+
+    <div id="korek" style="margin-top: 50vh;">
+        <h2>Проверка перехода</h2>
+        <p>Я тут был и мёд пиво пил</p>
+    </div>
+
+    <div id="izagia" style="margin-top: 50vh;">
+        <h2>Проверка перехода top 2</h2>
+        <p>Я тут был и мёд пиво пил</p>
+    </div>
     <h2>Проверка тегов</h2>
     <p>
         14m<sup>2</sup><br>
@@ -150,12 +254,21 @@
     end.
     </code></pre>
 </main>
-<footer>
+<footer class="footer">
+
+    <div class="carousel"
+         data-flickity='{ "imagesLoaded": true, "percentPosition": false, "prevNextButtons": true }'>
+        <img src="Source/korek.jpg" alt="TEST" />
+        <img src="Source/Jax.png" alt="TEST" />
+        <img src="Source/crusader.png" alt="TEST" />
+    </div>
+
     <ul>
-        <h3>Связи с ГМом и создателем сайта</h3>
-        <li><a href="https://t.me/Verukk">Телеграм слуги</a></li>
-        <p class="uppercase">Это будет очень большая тряска!</p>
+        <h3 class = "footer">Связи с ГМом и создателем сайта</h3>
+        <li class="connection-section"><a href="https://t.me/Verukk">Телеграм слуги</a></li>
+        <h3 class="footer">Это будет очень большая тряска!</h3>
     </ul>
+    <p>&copy; 2024 Arstadia World Wiki, все права принадлежат МНЕ</p>
 </footer>
 </body>
 </html>
